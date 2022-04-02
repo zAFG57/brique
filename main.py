@@ -10,7 +10,7 @@ myfont=pygame.freetype.SysFont(None,20)
 
 width, height = 800, 600
 screen = pygame.display.set_mode((width, height))
-pygame.display.set_caption("Ludo se crack")
+pygame.display.set_caption("Ludo ce crack")
 
 niveau = 1
 font = pygame.font.Font("casse-brique/verdana.ttf", 30)
@@ -198,8 +198,8 @@ jeu = Jeu()
 menu = True
 while menu:
     screen.fill(NOIR)
-    bvn = font.render(str("bienvenu sur le jeux de casse brique"), 1, BLANC)
-    clicker = font.render(str("clicker pour jouer"), 1, BLANC)
+    bvn = font.render(str("bienvenue sur le jeu de casse brique"), 1, BLANC)
+    clicker = font.render(str("cliquer pour jouer"), 1, BLANC)
     screen.blit(bvn, (70,height/2 - 50))
     screen.blit(clicker, (250,height/2 + 50))
     for event in pygame.event.get():
@@ -214,7 +214,7 @@ while True:
     if jeu.balle.vie == 0:
     # game over 
         screen.fill(NOIR)
-        fin = font.render(str("Gamme over !!"), 1, BLANC)
+        fin = font.render(str("Game Over !!"), 1, BLANC)
         screen.blit(fin, (250,height/2))
         for event in pygame.event.get():
             if event.type == pygame.QUIT: sys.exit()
