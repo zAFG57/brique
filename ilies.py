@@ -247,7 +247,7 @@ while True:
             lose.play()
             jeu.instence += 1
         screen.fill(ORANGE)
-        fin = font.render(str("Game over"), 1, BLANC)
+        fin = font.render(str("Game Over"), 1, BLANC)
         scor = font.render(str(f"your score: {jeu.balle.score + (niveau*78)}"), 1, BLANC)
         screen.blit(fin, (250,height/2-50))
         screen.blit(scor, (250,height/2+50))
