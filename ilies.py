@@ -229,8 +229,8 @@ jeu = Jeu()
 menu = True
 while menu:
     screen.fill(BLEU_FONCER)
-    bvn = font.render(str("bienvenu sur le jeux de casse brique"), 1, BLANC)
-    clicker = font.render(str("clickez pour jouer"), 1, BLANC)
+    bvn = font.render(str("bienvenue sur le jeu de casse brique"), 1, BLANC)
+    clicker = font.render(str("cliquez pour jouer"), 1, BLANC)
     screen.blit(bvn, (70,height/2 - 50))
     screen.blit(clicker, (250,height/2 + 50))
     for event in pygame.event.get():
